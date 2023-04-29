@@ -9,7 +9,7 @@
         <v-checkbox v-model="checkbox" label="Do you agree?" required></v-checkbox>
 
         <v-btn class="mr-4" @click="submit">
-            submit
+            Eliminate
         </v-btn>
         <v-btn @click="clear">
             clear

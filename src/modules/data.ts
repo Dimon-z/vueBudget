@@ -1,11 +1,11 @@
 class DataObj {
-    currency: string
-    date: string
-    summa: number
-    type: string
-    typeName: string
-    currencyName: string
-    timeStamp: number
+    currency
+    date
+    summa
+    type
+    typeName
+    currencyName
+    timeStamp
     constructor(summa: number, currency: string, date: string, type: string, typeName: string, currencyName: string) {
         this.currency = currency;
         this.date = date;

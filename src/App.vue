@@ -1,10 +1,13 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import InputForm2 from './components/inputForm2.vue';
+import { RouterView } from 'vue-router';
+import Chart from 'chart.js/auto';
+import autocolors from 'chartjs-plugin-autocolors';
+Chart.register(autocolors);
+
 </script>
 
 <template>
-  <InputForm2/>
+  <router-view></router-view>
 </template>
 
 <style scoped>

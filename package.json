@@ -9,10 +9,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "chart.js": "^4.3.0",
+    "chartjs": "^0.3.24",
+    "chartjs-plugin-autocolors": "^0.2.2",
+    "firebase": "^9.21.0",
     "mdi": "^2.2.43",
     "pinia": "^2.0.34",
     "vite-plugin-vuetify": "^1.0.2",
     "vue": "^3.2.47",
+    "vue-chart-3": "^3.1.8",
+    "vue-router": "^4.1.6",
     "vuelidate": "^0.7.7",
     "vuetify": "^3.1.13"
   },
