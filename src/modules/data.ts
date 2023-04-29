@@ -6,7 +6,8 @@ class DataObj {
     typeName
     currencyName
     timeStamp
-    constructor(summa: number, currency: string, date: string, type: string, typeName: string, currencyName: string) {
+    expenceType
+    constructor(summa: number, currency: string, date: string, type: string, typeName: string, currencyName: string, expenceType:string) {
         this.currency = currency;
         this.date = date;
         this.summa = summa;
@@ -14,6 +15,7 @@ class DataObj {
         this.typeName = typeName;
         this.currencyName = currencyName;
         this.timeStamp = Date.now();
+        this.expenceType = expenceType;
     }
 };
 

@@ -10,19 +10,17 @@
 import { Chart, Legend, Title, Tooltip } from "chart.js"
 import { DoughnutChart } from "vue-chart-3"
 import {ref, computed} from 'vue'
+import { Data } from '../modules/data'
 
 Chart.register(Legend, Title, Tooltip)
 Chart.defaults.plugins.title.display = true
 
-const dataValues = ref([10, 20, 40])
-
 const data = computed(() => ({
-  labels: ["Foo", "Bar", "Baz"],
+  labels: [1,2,3,4,5],//Data.forEach((el)=>{}),
 
   datasets: [
     {
-      data: dataValues.value,
-      backgroundColor: ["#859900", "#d33682", "#cb4b16"]
+      data: [3,4,5,5,4,61],
     }
   ]
 }))
@@ -35,8 +33,11 @@ const options = ref({
   },
 
   plugins: {
+    autocolors: {
+        mode: 'data',
+      },
     title: {
-      text: "Doughnut"
+      text: "Expence Chart"
     }
   }
 })

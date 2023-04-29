@@ -8,9 +8,7 @@ const count = ref(0)
 
 <template>
   <div>
-    <router-view>
-      
-    </router-view>
+    <router-view />
   </div>
 </template>
 

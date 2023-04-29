@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import type { RouteRecordRaw } from 'vue-router';
 import { RoutePaths } from '../enums/PageNameRouter';
-import HelloWorldVue from '../views/HelloWorld.vue';
+import inputForm2Vue from '../views/inputForm2.vue';
+
 
 const HelloWorldVue = () => import('../views/HelloWorld.vue');
 const LoginView = () => import('../views/Login.vue');
@@ -24,6 +25,10 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: RoutePaths.LIST,
         component: ListView,
+      },
+      {
+        path: RoutePaths.FORM,
+        component: inputForm2Vue,
       },
     ],
   },

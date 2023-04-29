@@ -3,4 +3,5 @@ export enum RoutePaths {
   LOGIN = 'login',
   GRAPH = 'graph',
   LIST = 'list',
+  FORM = 'form'
 }

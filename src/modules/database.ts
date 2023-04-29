@@ -14,4 +14,4 @@ const firebaseApp = initializeApp(firebaseConfig);
 const DB = getDatabase(firebaseApp);
 export default DB;
 
-void set(ref(DB, 'users'), "mockUsers");
+//void set(ref(DB, 'users'), "mockUsers");

@@ -3,13 +3,12 @@
         <v-text-field v-model="currency" label="Currency" required></v-text-field>
         <v-text-field v-model="date" label="Date" required></v-text-field>
         <v-text-field v-model="summa" label="summa" required></v-text-field>
-        <v-text-field v-model="type" label="type" required></v-text-field>
+        <v-text-field v-model="type" label="Expence type" required></v-text-field>
         <v-text-field v-model="typeName" label="typeName" required></v-text-field>
-        <v-select v-model="currencyName" :items="items" label="Item" required></v-select>
-        <v-checkbox v-model="checkbox" label="Do you agree?" required></v-checkbox>
-
+        <v-select v-model="expenceType" :items="expences" label="Expence type" required></v-select>
+        <v-select v-model="currencyName" :items="items" label="Currency" required></v-select>
         <v-btn class="mr-4" @click="submit">
-            Eliminate
+            Add
         </v-btn>
         <v-btn @click="clear">
             clear
@@ -24,17 +23,18 @@
 import { Data, DataObj } from '../modules/data'
 import { ref } from 'vue';
 
-let currency = ref()
-let date = ref()
-let summa = ref()
-let type = ref()
-let typeName = ref()
-let currencyName = ref()
-let checkbox = ref()
-let items = ['RUB', 'baks']
+const currency = ref()
+const date = ref()
+const summa = ref()
+const type = ref()
+const typeName = ref()
+const currencyName = ref()
+const items = ['RUB', 'USD']
+const expenceType = ref()
+const expences = ['food','health','education','logistic','hobby']
 
 function submit() {
-    Data.push(new DataObj(summa.value, currency.value, date.value, type.value, typeName.value, currencyName.value))
+    Data.push(new DataObj(summa.value, currency.value, date.value, type.value, typeName.value, currencyName.value,expenceType.value))
     console.log(Data)
 }
 function clear() {
@@ -44,7 +44,6 @@ function clear() {
  type.value = '';
  typeName.value = '';
  currencyName.value = '';
- checkbox.value = false;
 }
 
 </script>
