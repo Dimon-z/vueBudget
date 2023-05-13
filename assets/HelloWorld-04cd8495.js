@@ -1,1 +1,0 @@
-import{d as o,r as _,c as t,a as r,o as s,b as n,_ as l}from"./index-8290ceee.js";const a=o({__name:"HelloWorld",props:{msg:null},setup(c){return _(0),(p,d)=>{const e=n("router-view");return s(),t("div",null,[r(e)])}}});const m=l(a,[["__scopeId","data-v-8903db34"]]);export{m as default};
