@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import type { RouteRecordRaw } from 'vue-router';
 import { RoutePaths } from '../enums/PageNameRouter';
-import inputForm2Vue from '../views/inputForm2.vue';
+import inputForm2Vue from '../pages/inputForm2.vue';
 
 
-const HelloWorldVue = () => import('../views/HelloWorld.vue');
-const LoginView = () => import('../views/Login.vue');
-const GraphView = () => import('../views/Graph.vue');
-const ListView = () => import('../views/List.vue');
+const HelloWorldVue = () => import('../pages/HelloWorld.vue');
+const LoginView = () => import('../pages/Login.vue');
+const GraphView = () => import('../pages/Graph.vue');
+const ListView = () => import('../pages/List.vue');
 
 const routes: Array<RouteRecordRaw> = [
   {

@@ -2,7 +2,7 @@
     <form>
         <v-text-field v-model="date" label="Date" required></v-text-field>
         <v-text-field v-model="summa" label="summa" required></v-text-field>
-        <v-text-field v-model="type" label="Location" required></v-text-field>
+        <v-text-field v-model="location" label="Location" required></v-text-field>
         <v-select v-model="expenceType" :items="expences" label="Expence type" required></v-select>
         <v-select v-model="currencyName" :items="items" label="Currency" required></v-select>
         <v-btn class="mr-4" @click="submit">
