@@ -4,7 +4,7 @@ import { defineStore } from "pinia";
 export const useBudgetStore = defineStore("data", () => {
   const arrayOfExpences = ref<Array<DataObj>>([]);
   const user = ref();
-  function deleteExpenceObj(deletionOption: string) {
+  function deleteExpenceObj(deletionOption: number) {
     arrayOfExpences.value.filter(
       (obj) => !(+obj.timeStamp === +deletionOption)
     );

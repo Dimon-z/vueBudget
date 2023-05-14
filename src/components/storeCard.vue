@@ -13,12 +13,10 @@
 const props = defineProps({
     expenceType:String,
     location:String ,
-    summa:String,
+    summa:Number,
     currencyName:String ,
     timestamp:String,
 });
-defineEmits()
-
 
 </script>
 

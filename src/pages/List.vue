@@ -1,6 +1,6 @@
 <template>
     <div v-for="item in arrayOfExpences">
-        <storeCard :="item" @delete="store.deleteExpenceObj()"/>
+        <storeCard :="item" @delete="store.deleteExpenceObj"/>
     </div>
 </template>
 <script setup lang="ts">
