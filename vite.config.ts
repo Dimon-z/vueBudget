@@ -6,6 +6,6 @@ import vuetify from 'vite-plugin-vuetify';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'https://dimon-z.github.io/vueBudget',
+  base: 'vueBudget',
   plugins: [vue(),vuetify()],
 })

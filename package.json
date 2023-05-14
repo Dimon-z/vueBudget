@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vuepic/vue-datepicker": "^5.1.0",
     "chart.js": "^4.3.0",
     "chartjs": "^0.3.24",
     "chartjs-plugin-autocolors": "^0.2.2",
