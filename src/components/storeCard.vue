@@ -5,18 +5,21 @@
     :subtitle="location"
     :text="summa + ' ' + currencyName "
   >
-    <v-btn @click="$emit('delete', timestamp)">Delete</v-btn>
+    <v-btn @click="emit(`delete`, timeStamp)">Delete</v-btn>
   </v-card>
 </template>
 
 <script setup lang="ts">
-const props = defineProps({
-    expenceType:String,
-    location:String ,
-    summa:Number,
-    currencyName:String ,
-    timestamp:String,
-});
+const props = defineProps<{
+    expenceType:string,
+    location:string ,
+    summa:number,
+    currencyName:string ,
+    timeStamp:number,
+}>();
+const emit = defineEmits<{
+  (e: 'delete', timeStamp: number): void
+}>()
 
 </script>
 

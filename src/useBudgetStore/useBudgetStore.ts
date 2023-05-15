@@ -2,11 +2,11 @@ import { computed, ref } from "vue";
 import { defineStore } from "pinia";
 
 export const useBudgetStore = defineStore("data", () => {
-  const arrayOfExpences = ref<Array<DataObj>>([]);
+  let arrayOfExpences = ref<Array<DataObj>>([]);
   const user = ref();
   function deleteExpenceObj(deletionOption: number) {
-    arrayOfExpences.value.filter(
-      (obj) => !(+obj.timeStamp === +deletionOption)
+    arrayOfExpences.value = arrayOfExpences.value.filter(
+      (obj) => !(obj.timeStamp === deletionOption)
     );
   }
   function addExpenceObj(obj: DataObj) {

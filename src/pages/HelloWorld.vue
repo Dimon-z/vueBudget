@@ -1,15 +1,16 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-defineProps<{ msg: string }>()
 
 const count = ref(0)
 </script>
 
 <template>
-  <div>
-    <router-view />
-  </div>
+<router-view v-slot="{ Component }">
+  <keep-alive include="inputForm2">
+    <component :is="Component" />
+  </keep-alive>
+</router-view>
 </template>
 
 <style scoped>
