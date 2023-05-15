@@ -1,0 +1,1 @@
+import{d as a,r as n,c as e,w as s,a as r,o,K as l,b as c,_ as p}from"./index-48a3363b.js";const d=a({__name:"HelloWorld",setup(u){return n(0),(i,m)=>{const t=r("router-view");return o(),e(t,null,{default:s(({Component:_})=>[(o(),e(l,{include:"inputForm2"},[(o(),e(c(_)))],1024))]),_:1})}}});const f=p(d,[["__scopeId","data-v-7a91481a"]]);export{f as default};
